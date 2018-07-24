@@ -2,84 +2,188 @@
 layout: landing
 ---
 				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<h2>{{ site.title }}</h2>
-							<p>{{ site.description | markdownify }}</p>
-							<ul class="actions">
-								<li><a href="#" class="button special">Apply to attend</a></li>
-							</ul>
-						</div>
-						<a href="#one" class="more scrolly">Learn More</a>
-					</section>
+				<section id="banner">
+					<div class="inner">
+						<h2>{{ site.title }}</h2>
+						<p>
+							Explore the art and craft of making things from scratch.
+						</p>
+						<p>
+							Near Bangalore. Nov 23 – 25, 2018.
+						</p>
+						<!-- <ul class="actions">
+							<li><a href="#" class="button special">Apply to attend</a></li>
+						</ul> -->
+					</div>
+					<a href="#one" class="more scrolly">learn more</a>
+				</section>
+
+				<!-- One -->
+				<section id="what-demystify" class="wrapper style1 special">
+					<div class="inner narrow-desc">
+						<header class="major">
+							<h2>What is Demystify?</h2>
+							<p>
+								demystify is an effort to understand how and why things are made. It's taking shape as a camping festival near Bangalore and is a highly participative event. The agenda is largely informed by what the participants want to explore.
+							</p>
+							<!-- <p>*well not completely from scratch, because you know, that might <a href="https://recursive.recipes/recipe/chocolate-chip-cookies?amount=36&timelimit=45517160&ingredientsToBuild=" target="_blank">take a while.</a></p> -->
+						</header>
+					</div>
+				</section> 
 
 				<!-- Two -->
-					<section id="two" class="wrapper alt style2">
-						<section class="spotlight">
-							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
-								<h2>Making. Demystified.</h2>
-								<p>Urban lifestyles can tend us towards taking things <i>as is</i>. Ever wonder about how things are grown, made and distributed?</p>
-								<p>Pick something you're interested in learning more about, and make it with fellow campers. Learn how to grow vegetables, bake bread or brew your own beer. Make your own furniture. The sky is the limit. Make something new.</p>
+				<section id="overview" class="wrapper alt style2">
+					<section class="spotlight">
+						<div class="image making-img"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+							<h2>Making from scratch. Demystified.</h2>
+							<div>
+								<p>
+									Making things from scratch can be a whole lot more fun than just, you know, buying them. Especially when we collab with other fun people!
+								</p>
+								<p>If you had three days to disconnect from the routine and try something new, what would you be interested in making? What can you help others learn how to make?</p>
+								<form id="making_form" class="session-form interest-form" method="POST" netlify-honeypot="bot-field" netlify>
+									<p class="hidden">
+										<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+										<input id="making-form-session-id" name="session_id" val="" />
+									</p>
+									<p>
+										<textarea required class='form-default-textarea' name="interest" type="text" placeholder="I want to learn how to grow my own vegetables, bake bread and brew my own beer. I can teach how to knit!"></textarea>
+									</p>
+									<p>
+										<button type="submit">Submit</button>
+									</p>
+								</form>
+								<p>
+									We asked this on Twitter recently and here are some <a href="https://twitter.com/shreyas_satish/status/1012646778750070784" target="_blank" rel="no-follow">responses</a> for inspiration.
+								</p>
 							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
-								<h2>Explore the politics around making</h2>
-								<p>We don't make in isolation. Whatever we make affects people in a myriad ways; the social and power dynamics between people; our personal privacy, agency and freedom. For instance, in what ways could a national identification project affect a billion lives?</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/garbage.jpg" alt="" /></div><div class="content">
-								<h2>Repair. Recycle. Reuse.</h2>
-								<p>Learn how to repair electronics, recycle and upcycle 'waste'. The environmental changes on our planet mean we're going to have to find more sustainable ways of living. Fast.</p>
-							</div>
-						</section>
-						<section class="spotlight">
-							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
-								<h2>A camping festival like no other</h2>
-								<p>Set amid the hills near Bangalore, it's the perfect escape from the urban routine. Making, art, nature and friendly company. Set and setting.</p>
-							</div>
-						</section>
+						</div>
 					</section>
+		
+					<section class="spotlight">
+						<div class="image ethical-img"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+							<h2>Explore the ethical issues around making</h2>
+							<p>
+								While making things is fun, it's just as important to understand the historical context and the unintended consequences of pushing things out into the world.
+							</p>
+							<p>
+								We don't make in isolation. Whatever we make affects people and the environment in a myriad ways; the social and power dynamics between people; our personal identities, privacy, agency and freedom.
+							</p>
+							<p>With this mind, what topics would you like to explore? Anything you'd like to present a session on?</p>
+							<form id="ethical_form" class="session-form interest-form" method="POST" netlify-honeypot="bot-field" netlify>
+								<p class="hidden">
+									<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+									<input id="ethical-form-session-id" name="session_id" val="" />									
+								</p>
+								<p>
+									<textarea required class='form-default-textarea' name="interest" type="text" placeholder="I want to learn how about dark design patterns. I can talk about the impacts on privacy due to using certain apps."></textarea>
+								</p>
+								<p>
+									<button type="submit">Submit</button>
+								</p>
+							</form>
+						</div>
+					</section>
+
+					<section class="spotlight">
+						<div class="image repair-img"><img src="images/phone.jpg" alt="" /></div><div class="content">
+							<h2>revive repair culture</h2>
+							<p>Our devices are increasingly becoming hostile to repair. If we don't push back, the culture of prying things open to understand how they work and repair them, will simply become elusive.</p>
+							<p>What are you interested in repairing? What can you help repair?</p>
+							<form id="repair_form" class="session-form interest-form" method="POST" netlify-honeypot="bot-field" netlify>
+								<p class="hidden">
+									<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+									<input id="repair-form-session-id" name="session_id" val="" />									
+								</p>
+								<p>
+									<textarea required class='form-default-textarea' name="interest" type="text" placeholder="I want to learn how to repair my laptop. I can teach how to fix a bad hairstyle."></textarea>
+								</p>
+								<p>
+									<button type="submit">Submit</button>
+								</p>
+							</form>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image sustain-img"><img src="images/garbage.jpg" alt="" /></div><div class="content">
+							<h2>Reuse. Recycle. Upcycle.</h2>
+							<p>The environmental changes on our planet mean we're going to have to find more sustainable ways of living.</p>
+							<p>What are you interested in learning with respect to sustainibility? What can you share with the audience at demystify?</p>
+							<form id="sustain_form" class="session-form interest-form" method="POST" netlify-honeypot="bot-field" netlify>
+								<p class="hidden">
+									<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+									<input id="sustain-form-session-id" name="session_id" val="" />									
+								</p>
+								<p>
+									<textarea required class='form-default-textarea' name="interest" type="text" placeholder="I want to learn how to compost my waste. I can teach how to turn waste paper into origami."></textarea>
+								</p>
+								<p>
+									<button type="submit">Submit</button>
+								</p>
+							</form>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image setting-img"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+							<h2>Set and setting</h2>
+							<p>Start your mornings with coffee (or chai) and explore the hills through long hikes. Cook lunch together and grill barbecue at night. Listen to and sing along with some amazing musicians around campfires.</p>
+							<p>Set amid hills near Bangalore, it's the perfect escape from the urban routine. Making, art, nature and friendly company. What will you make of it?</p>
+						</div>
+					</section>
+				</section>
 
 				<!-- Three -->
-					<section id="three" class="wrapper style3 special">
-						<div class="inner">
-							<header class="major">
-								<h2>Guidelines at camp</h2>
-								<p></p>
-							</header>
-							<ul class="features">
-								<li class="icon fa-hand-peace-o">
-									<h3>Respect personal space</h3>
-									<p>Demystify is meant to be a safe and inclusive space. Always ask before engaging with someone's personal space. Respect their decision. Demystify will have awareness and child-care teams on site.</p>
-								</li>
-								<li class="icon fa-leaf">
-									<h3>Care for the environment</h3>
-									<p>Do not bring any plastic that will be disposed on site. Leave the place better than it was.</p>
-								</li>
-								<li class="icon fa-exchange">
-									<h3>Engage</h3>
-									<p>Demystify is a highly participative event. Make something, present a session, engage in discussions or volunteer and help put an amazing event together. Passive participation is highly discouraged.</p>
-								</li>
-								<li class="icon fa-home">
-									<h3>Make it our own</h3>
-									<p>Demystify is what we make of it. We live together for a weekend, look out for each other and treat camp like home.</p>
-								</li>
-							</ul>
-						</div>
-					</section>
 
 				<!-- CTA -->
-					<section id="cta" class="wrapper style4">
-						<div class="inner">
-							<header>
-								<h2>What are you demystifying?</h2>
-								<p></p>
-							</header>
-							<ul class="actions vertical">
-								<li><a href="#" class="button fit special">Apply to attend</a></li>
-								<li><a href="#" class="button fit">Ask a question</a></li>
-							</ul>
-						</div>
-					</section>
+				<section id="cta" class="wrapper style4">
+					<div class="inner">
+						<header>
+							<h2>Invites will be sent out based on responses written above.</h2>
+							<p></p>
+						</header>
+						<ul class="actions vertical">
+							<form id="subscribe_form" class="session-form" method="POST" netlify-honeypot="bot-field" netlify>
+								<p class="hidden">
+									<label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+									<input id="subscribe-form-form-session-id" name="session_id" val="" />									
+								</p>
+								<input type="text" placeholder="first name" required></input>
+								<br />
+								<input type="email" placeholder="email" required></input>
+								<p class='unsub-msg'>
+									no spam. unsubscribe any time.
+								</p>
+								<button class="button fit special" type="submit">Let me know!</button>
+							</form>
+							<!-- <li><a href="#" class="button fit special">Apply to attend</a></li>
+							<li><a href="#" class="button fit">Ask a question</a></li> -->
+						</ul>
+					</div>
+				</section>
+				<section id="three" class="wrapper style3 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Guidelines at camp</h2>
+							<p></p>
+						</header>
+						<ul class="features">
+							<li class="icon fa-hand-peace-o">
+								<h3>Respect personal space</h3>
+								<p>demystify is meant to be a safe and inclusive space. Always ask before engaging with someone's personal space. Respect their decision. Demystify will have awareness and child-care teams on site.</p>
+							</li>
+							<li class="icon fa-leaf">
+								<h3>Care for the environment</h3>
+								<p>Do not bring any plastic that will be disposed on site. Leave the place better than it was.</p>
+							</li>
+							<li class="icon fa-exchange">
+								<h3>Engage</h3>
+								<p>demystify is a highly participative event. Make something, present a session, engage in discussions or volunteer and help put an amazing event together. Passive participation is highly discouraged.</p>
+							</li>
+							<li class="icon fa-home">
+								<h3>Make it our own</h3>
+								<p>demystify is what we make of it. We live together for a weekend, look out for each other and treat camp like home.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+

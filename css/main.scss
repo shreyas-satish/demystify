@@ -101,7 +101,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-		text-transform: uppercase;
+		text-transform: lowercase;
 
 		a {
 			color: inherit;
@@ -824,7 +824,7 @@ $baseurl: '{{ site.baseurl }}/images';
 		padding: 0 2.75em;
 		text-align: center;
 		text-decoration: none;
-		text-transform: uppercase;
+		text-transform: lowercase;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -1018,7 +1018,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			.content {
 				@include padding(4em, 3em);
 				max-width: none;
-				text-align: center;
+				text-align: left;
 				width: 100%;
 			}
 		}
@@ -1328,7 +1328,7 @@ $baseurl: '{{ site.baseurl }}/images';
 					letter-spacing: _size(letter-spacing-alt);
 					outline: 0;
 					text-decoration: none;
-					text-transform: uppercase;
+					text-transform: lowercase;
 
 					@include breakpoint(small) {
 						line-height: 3em;
@@ -1428,7 +1428,7 @@ $baseurl: '{{ site.baseurl }}/images';
 						font-size: 0.8em;
 						letter-spacing: _size(letter-spacing-alt);
 						padding: 0 1.5em;
-						text-transform: uppercase;
+						text-transform: lowercase;
 
 						&.menuToggle {
 							outline: 0;
@@ -1523,7 +1523,7 @@ $baseurl: '{{ site.baseurl }}/images';
 
 		p {
 			letter-spacing: _size(letter-spacing-alt);
-			text-transform: uppercase;
+			text-transform: lowercase;
 
 			a {
 				color: inherit;
@@ -1547,7 +1547,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			padding-left: _size(letter-spacing-alt);
 			position: absolute;
 			text-align: center;
-			text-transform: uppercase;
+			text-transform: lowercase;
 			width: 16em;
 			z-index: 1;
 
@@ -1690,7 +1690,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			p {
 				color: inherit;
 				letter-spacing: _size(letter-spacing-alt);
-				text-transform: uppercase;
+				text-transform: lowercase;
 				top: 0;
 
 				a {
@@ -1754,7 +1754,7 @@ $baseurl: '{{ site.baseurl }}/images';
 			letter-spacing: _size(letter-spacing-alt);
 			list-style: none;
 			padding: 0;
-			text-transform: uppercase;
+			text-transform: lowercase;
 
 			li {
 				border-left: solid 1px _palette(fg-light);
@@ -1830,5 +1830,57 @@ $baseurl: '{{ site.baseurl }}/images';
 			#footer {
 				background-color: darken(_palette(bg), 8);
 			}
+		}
+	}
+
+	.narrow-desc {
+		width: 50%;
+		text-align: left;
+	}
+
+	.hidden {
+		display: none;
+	}
+
+	.form-default-textarea {
+		height: 7em;
+	}
+
+	@media screen and (max-width: 736px) {
+		#what-demystify > .inner {
+			height: 17em;
+		}
+	}
+
+	@media screen and (min-width: 736px) {
+		#what-demystify > .inner {
+			width: 50%;
+			margin-left: 32%;
+		}
+	}
+
+	.unsub-msg {
+		font-size: 13px;
+	}
+
+	@media screen and (min-width: 736px) {
+		.spotlight > .making-img {
+			margin-top: -26%;
+		}
+
+		.spotlight > .ethical-img {
+			margin-top: -24%;
+		}
+
+		.spotlight > .repair-img {
+			margin-top: -8%;
+		}
+
+		.spotlight > .sustain-img {
+			margin-top: -11%;
+		}
+
+		.spotlight > .setting-img {
+			margin-top: 8%;
 		}
 	}
