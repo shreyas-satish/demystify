@@ -54,5 +54,6 @@ social:
 
 # Build settings
 markdown: kramdown
-#sass:
+sass:
+  sass_dir: _sass
 #  style: compressed
