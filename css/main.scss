@@ -1835,7 +1835,11 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	.narrow-desc {
 		width: 50%;
-		text-align: left;
+		text-align: center;
+
+		p {
+			text-align: left;
+		}
 	}
 
 	.hidden {
@@ -1847,15 +1851,15 @@ $baseurl: '{{ site.baseurl }}/images';
 	}
 
 	@media screen and (max-width: 736px) {
-		#what-demystify > .inner {
-			height: 17em;
+		.wide-spotlight > .inner {
+			max-height: 45em;
 		}
 	}
 
 	@media screen and (min-width: 736px) {
-		#what-demystify > .inner {
+		.wide-spotlight > .inner {
 			width: 50%;
-			margin-left: 32%;
+			margin-left: 25%;
 		}
 	}
 
@@ -1865,19 +1869,19 @@ $baseurl: '{{ site.baseurl }}/images';
 
 	@media screen and (min-width: 736px) {
 		.spotlight > .making-img {
-			margin-top: -26%;
+			margin-top: -38%;
 		}
 
 		.spotlight > .ethical-img {
-			margin-top: -24%;
+			margin-top: -16%;
 		}
 
 		.spotlight > .repair-img {
-			margin-top: -8%;
+			margin-top: -18%;
 		}
 
 		.spotlight > .sustain-img {
-			margin-top: -11%;
+			margin-top: -15%;
 		}
 
 		.spotlight > .setting-img {
