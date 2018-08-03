@@ -1865,23 +1865,11 @@ $baseurl: '/images';
 	}
 
 	@media screen and (min-width: 736px) {
-		.spotlight > .making-img {
-			margin-top: -19%;
+		.spotlight > .image {
+			margin-bottom: 25%;
 		}
 
-		.spotlight > .ethical-img {
-			margin-top: -16%;
-		}
-
-		.spotlight > .repair-img {
-			margin-top: -16%;
-		}
-
-		.spotlight > .sustain-img {
-			margin-top: -16%;
-		}
-
-		.spotlight > .setting-img {
-			margin-top: 8%;
+		.spotlight > .content {
+			padding: 0em 4em 6em 4em;
 		}
 	}
