@@ -1,6 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 /*
 	Spectral by HTML5 UP
 	html5up.net | @n33co
@@ -2691,7 +2691,7 @@ body.is-mobile.landing #footer {
     padding: 0em 4em 6em 4em; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'PT+Serif', serif;
+  font-family: 'Nunito', sans-serif;
   weight: 400;
   weight-bold: 600;
   weight-extrabold: 800; }
