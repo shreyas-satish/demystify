@@ -6,6 +6,7 @@ $baseurl: '/images';
 @import 'libs/mixins';
 @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic');
+@import url("https://fonts.googleapis.com/css?family=PT+Serif");
 
 /*
 	Spectral by HTML5 UP
@@ -95,7 +96,7 @@ $baseurl: '/images';
 	h1, h2, h3, h4, h5, h6 {
 		color: _palette(fg-bold);
 		font-weight: _font(weight-extrabold);
-		letter-spacing: _size(letter-spacing-alt);
+		// letter-spacing: _size(letter-spacing-alt);
 		line-height: 1em;
 		margin: 0 0 (_size(element-margin) * 0.5) 0;
 		text-transform: lowercase;
@@ -1873,3 +1874,11 @@ $baseurl: '/images';
 			padding: 0em 4em 6em 4em;
 		}
 	}
+
+	h1, h2, h3, h4, h5, h6 {
+		font-family: 'PT+Serif', serif;
+		weight: 400;
+		weight-bold: 600;
+		weight-extrabold: 800;
+	}
+
